@@ -1,0 +1,9 @@
+<project default="compile">
+   <target name="compile" description="compiles files">
+      <javac srcdir="." destdir="." includeantruntime="false"/>
+   </target>
+    <target name="run" depends="compile" description="runs files">
+      <java classpath=" " classname="RealEstateManager" fork="true">
+   </java>
+   </target>
+</project>
